@@ -4,8 +4,8 @@
     <style>
       .cls-1 {
         fill: #fff;
-        stroke: #000;
-        stroke-miterlimit: 10;
+        stroke: #f2ebc4;
+        stroke-miterlimit: 1;
       }
     </style>
   </defs>

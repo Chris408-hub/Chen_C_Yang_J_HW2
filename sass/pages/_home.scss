@@ -1,108 +1,72 @@
-
 @use '../abstracts' as a;
 
-
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: a.$primary-color;
-}
-
-header{
-    h2{
-text-align: center;
-        font-size: 120px;
-        color: a.$btn-hover;
-        margin-bottom: 90px;
-    }
-}
-h3{
-    font-size: 18px;
-    color: a.$heading-color;
-}
-
-
-
-.menu {
-    margin: 20px 10px;
-    height: auto;
-    max-width: 100%;
+.game{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0px;
-    
-
-    h3{
-        font-size: 25px;
-        
-    }
-}
-
-.flavor button, .topping button {
-    display: block;
-    padding: 20px;
-    margin: 10px 0;
-    cursor: pointer;
-    background-color: a.$btn-color;
-    color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 75px;
-    font-size: 20px;
-}
-
-.flavor button:hover, .topping button:hover {
-    background-color: a.$btn-hover;
-}
+    justify-content: center;
+    align-items: center;
+    margin-top: 100PX;
 
 
-
-#cupcakeContainer {
-
-
-    margin-left: 40px;
-    height: auto;
-   background: url('../images/cupcake-bg.svg') no-repeat;
-    background-size: cover;
-    padding: 270px 300px;
-    position: relative;
-
-
-
-}
-
-
-#cupcakeBase{
-    position: absolute;
-    bottom: 2%;
-    left: 30%;
-    max-width: 50%;
-    height: 28%;
-}
-
-.cupcakeCream {
-    position: absolute;
-    bottom: 20%;
-    left:28%;
-    height: 44%;
-}
-
-#cupcakeTopping{
-    position: absolute;
-    top: 40%;
-    left: 35%;
-    width: 60%;
-    height: 100%;
-  
-}
-.h-line1{
+.start-h2{
+text-align: center;
+    color: a.$heading-color;
+    font-size: 90px;
     margin-top: 100px;
+    margin-bottom: 100PX;
+}
+
+}
+
+.cupcake-play{
+    display: flex;
+    justify-content: space-around;
+    img{
+    width: 80px;
+    height: 80px;
+
+   
+    animation: scale 1s infinite alternate;
+    }
+    @keyframes scale {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(0.5);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .play{
+    border-radius: 75px;
+    background-color: a.$btn-color;
+    transition: background-color 0.3s, transform 0.2s; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    &:hover{
+        background-color: a.$btn-hover;
+        border: solid 1px a.$primary-color;
+        transform: scale(1.05);
+    }
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    padding:60px 120px;
+    
+}
+
+ }
+
+.h-line1{
+    margin-top: 150px;
     border-color: a.$btn-color;
     border-width: 2px; 
 }
 .h-line2{
-    margin-top:30px;
+    margin-top:10px;
     border-color: a.$btn-hover;
     border-width: 2px; 
     width: 50%;
@@ -113,11 +77,10 @@ h3{
         text-align: center;
     }
     h2{
-        font-size:80px;
+        font-size:50px;
         color: #fff;
     }
     h3{
-        margin-top: 10px;
         font-size: 20px;
         color: a.$btn-color;
     }
@@ -126,7 +89,6 @@ h3{
 footer{
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
     img{
         width: 25%;
         height:25%;
@@ -134,30 +96,9 @@ footer{
 }
 
 
-
-
 @media screen and (min-width: 768px){
 
 
-    .menu {
-
-
-    h3{
-        font-size: 35px;
-        
-    }
-}
-
-    .text{
-
-    h2{
-        font-size:100px;
-    }
-    h3{
-        margin-top: 20px;
-        font-size: 60px;
-    }
-}
 
 footer{
     img{
