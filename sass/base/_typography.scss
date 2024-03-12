@@ -1,0 +1,9 @@
+
+@use '../abstracts' as a;
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: a.$primary-color;
+    margin-top: 50px;
+}
+

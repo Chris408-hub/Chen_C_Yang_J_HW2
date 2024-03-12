@@ -1,0 +1,153 @@
+
+@use '../abstracts' as a;
+
+
+
+.play-header{
+    h2{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 60px;
+        color: a.$btn-hover;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+.play-con{
+
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    h3{
+        font-size:25px;
+        color: a.$heading-color;
+    }
+}
+
+.flavor-con, .topping-con{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; 
+}
+
+
+
+button {
+    flex: 1;
+    min-width: 100px;
+    display: block;
+    padding: 12px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: a.$btn-color;
+    color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 75px;
+    font-size: 16px;
+    &:hover {
+        background-color: a.$btn-hover;
+    }
+
+}
+
+
+#cupcakeContainer {
+
+    margin: 20px 65px;
+    background: url('../images/cupcake-bg.svg') no-repeat center center;
+    padding: 180px 100px;
+    position: relative;
+}
+
+
+#cupcakeBase{
+    position: absolute;
+    bottom: 2%;
+    left: 30%;
+    max-width: 50%;
+    height: 28%;
+}
+
+.cupcakeCream {
+    position: absolute;
+    bottom: 20%;
+    left:28%;
+    height: 44%;
+}
+
+.cupcakeCream path {
+    transition: fill 0.5s ease;
+}
+
+#cupcakeTopping{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    width: 60%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+@media screen and (min-width: 768px){
+
+
+.play-body{
+    margin: 50PX 0;
+}
+
+.play-header{
+    h2{
+        margin-top: 100px;
+        font-size: 90px;
+        margin-bottom: 90px;
+    }
+}
+
+
+.play-con{
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.flavor-con, .topping-con{
+    gap: 5px;
+
+
+}
+
+button {
+    display: block;
+    padding: 20px;
+    margin: 10px 0;
+    font-size: 20px;
+
+
+}
+
+#cupcakeContainer {
+
+    margin: 40px 95px;
+    width: 700px;
+    height: 600px;
+    padding: 100px 320px;
+
+}
+
+
+}
+
+@media screen and (min-width: 1200px){
+
+    button{
+        max-width: 150px;
+        max-height: 80px;
+    }
+}
