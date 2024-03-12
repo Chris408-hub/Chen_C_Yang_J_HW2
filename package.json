@@ -1,11 +1,10 @@
 {
   "name": "chen_c_yang_j_hw2",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "Welcome to the Cupcake Maker Game! This interactive web game allows users to create their own cupcake by choosing a flavor and a topping, demonstrating the power of Object-Oriented Programming (OOP) in JavaScript along with basic web development technologies.",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+     "start": "parcel index.html",
+  "build": "parcel build index.html --public-url ./"
   },
   "keywords": [],
   "author": "",
