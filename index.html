@@ -8,47 +8,69 @@
     <title>MAKE YOUR CUPCAKE</title>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <script defer type="module" src="js/main.js"></script>
 
 </head>
 <body>
-  <section class="menu">
+<header>
+  <h2>MAKE YOUR CUPCAKE</h2>
+</header> 
 
-  <div class="flavor">
-    <h3>Choose Your Flavor</h3>
-    <button class="flavor-vanilla">vanilla</button>
-    <button class="flavor-chocolate">chocolate</button>
+
+  <section class="top grid-con" >
+
+  <div class="menu m-col-start-1 m-col-end-4 l-col-start-2 l-col-end-6">
+
+    <div class="flavor">
+      <h3>Choose Your Flavor</h3>
+      <button class="flavor-vanilla">vanilla</button>
+      <button class="flavor-chocolate">chocolate</button>
+    </div>
+
+    <div class="topping">
+      <h3>Choose Your Topping</h3>
+      <button class="topping-strawberry">strawberry</button>
+      <button class="topping-blueberry">blueberry</button>
+    </div>
   </div>
 
-  <div class="topping">
-    <h3>Choose Your Topping</h3>
-    <button class="topping-strawberry">strawberry</button>
-    <button class="topping-blueberry">blueberry</button>
+
+  <div id="cupcakeContainer" >
+    <img id="cupcakeBase" src="images/cupcake-base.svg" alt="Cupcake Base">
+    <!-- <img id="cupcakeCream" src="images/cupcake-cream.svg" alt="Cupcake cream"> -->
+    <svg class="cupcakeCream" id="_图层_2" data-name="图层 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188.34 152.09">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: #fff;
+            stroke: #000;
+            stroke-miterlimit: 10;
+          }
+        </style>
+      </defs>
+      <g id="_图层_3" data-name="图层 3">
+        <path class="cls-1" d="m180.43,81.68c-3.79-5.22-8.56-9.22-13.71-11.83,1.19-3.32,1.84-6.86,1.84-10.53,0-18.76-16.81-34.07-37.88-34.88C125.26,10.44,111.68.5,95.76.5c-16.81,0-31.03,11.08-35.76,26.34-17.79-2.34-33.59,3.85-38.44,16.44-3.62,9.4-.31,20.25,7.74,29.39C12.49,77.94.5,91.67.5,107.78c0,20.67,19.75,37.43,44.12,37.43,4.31,0,8.47-.53,12.4-1.51,4.02,4.82,10.07,7.89,16.83,7.89,6.02,0,11.48-2.43,15.44-6.37,6.04,4,13.43,6.37,21.43,6.37,17.15,0,31.55-10.83,35.68-25.51,10.16,5.83,22.08,6.17,30.89-.23,12.73-9.24,14.13-29.02,3.13-44.17Z"/>
+      </g>
+    </svg>
+    <div id="cupcakeTopping"class="Cupcake Topping"></div>
   </div>
+
 </section>
 
+<section class="text">
+  <hr class="h-line1"><br>
+  <hr class="h-line2">
 
-  <div id="cupcakeContainer">
-      <img id="cupcakeBase" src="images/cupcake-base.svg" alt="Cupcake Base">
-      <!-- <img id="cupcakeCream" src="images/cupcake-cream.svg" alt="Cupcake cream"> -->
-      <svg class="cupcakeCream" id="_图层_2" data-name="图层 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188.34 152.09">
-        <defs>
-          <style>
-            .cls-1 {
-              fill: #fff;
-              stroke: #000;
-              stroke-miterlimit: 10;
-            }
-          </style>
-        </defs>
-        <g id="_图层_3" data-name="图层 3">
-          <path class="cls-1" d="m180.43,81.68c-3.79-5.22-8.56-9.22-13.71-11.83,1.19-3.32,1.84-6.86,1.84-10.53,0-18.76-16.81-34.07-37.88-34.88C125.26,10.44,111.68.5,95.76.5c-16.81,0-31.03,11.08-35.76,26.34-17.79-2.34-33.59,3.85-38.44,16.44-3.62,9.4-.31,20.25,7.74,29.39C12.49,77.94.5,91.67.5,107.78c0,20.67,19.75,37.43,44.12,37.43,4.31,0,8.47-.53,12.4-1.51,4.02,4.82,10.07,7.89,16.83,7.89,6.02,0,11.48-2.43,15.44-6.37,6.04,4,13.43,6.37,21.43,6.37,17.15,0,31.55-10.83,35.68-25.51,10.16,5.83,22.08,6.17,30.89-.23,12.73-9.24,14.13-29.02,3.13-44.17Z"/>
-        </g>
-      </svg>
-
-
-      <div id="cupcakeTopping"class="Cupcake Topping"></div>
-
+  <h2>CUPCAKE</h2>
+  <H3>FOOD TRUCK</H3>
+</section>
+<footer>
+  <img src="images/wheel.svg">
+  <img src="images/wheel.svg">
+</footer>
 </body>
 
 

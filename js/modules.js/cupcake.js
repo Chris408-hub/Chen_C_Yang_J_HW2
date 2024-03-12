@@ -8,6 +8,7 @@ class Cupcake {
 
     changeFlavor(flavor) {
         this.flavor = flavor;
+        this.topping = '';
         this.makeCupcake();
     }
 
@@ -19,14 +20,23 @@ class Cupcake {
     makeCupcake() {
         // change cream color
         const cupcakeCream = document.querySelector('.cupcakeCream path');
-        const creamColor = this.flavor === 'vanilla' ? '#f3e5ab' : '#d2691e'; 
+        const creamColor = this.flavor === 'vanilla' ? '#F5F5Df' : '#744823'; 
         cupcakeCream.style.fill = creamColor; 
 
         // change topping
         const cupcakeTopping = document.querySelector('#cupcakeTopping');
+    if (this.topping) {
         const toppingImage = this.topping === 'strawberry' ? '../images/strawberry.png' : '../images/blueberry.png';
         cupcakeTopping.style.backgroundImage = `url(${toppingImage})`;
         cupcakeTopping.style.display = 'block';
+        // cupcakeTopping.style.backgroundPosition = 'top center';
+        cupcakeTopping.style.backgroundSize = '40%';
+        cupcakeTopping.style.backgroundRepeat = 'no-repeat';
+    } else {
+        // If no topping has been selected, clear the topping image
+        cupcakeTopping.style.backgroundImage = '';
+        cupcakeTopping.style.display = 'none';
+    }
     }
 }
 
